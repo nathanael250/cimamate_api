@@ -25,6 +25,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/weather", weatherRoutes);
 app.use("/api/plan", planRoutes);
 
+const PORT = process.env.PORT || 5000;
 app.listen(process.env.PORT, () =>
     console.log(`Server running on port ${process.env.PORT}`)
 );
